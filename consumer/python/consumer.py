@@ -2,4 +2,4 @@ from kafka import KafkaConsumer
 
 consumer = KafkaConsumer('DawnNews')
 
-consumer.
+consumer.asad=KafkaConsumer('Experess news Test')
