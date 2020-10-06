@@ -16,7 +16,7 @@ public class ConsumerGroup {
     public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(ConsumerGroup.class.getName());
         String bootstrapServers = "127.0.0.1:9092";
-        String grp_id = "fifth_app";
+        String grp_id = "six";
         String topic = "DawnNews";
         //Creating consumer properties
         Properties properties = new Properties();
