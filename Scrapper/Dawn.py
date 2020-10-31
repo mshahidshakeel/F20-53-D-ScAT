@@ -1,7 +1,8 @@
 import threading
 from time import sleep
+from Scrapper.Scraper import newsScraper
 
-from Scraper import newsScraper
+
 class Dawn(newsScraper):
     # def __init__(self, fname, lname, year):
     def __init__(self,  newsWebsiteName, website_url,category_dict, keyword):

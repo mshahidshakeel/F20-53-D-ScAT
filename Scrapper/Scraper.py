@@ -3,6 +3,7 @@ from time import sleep
 from bs4 import BeautifulSoup
 # from kafka import KafkaProducer
 from newspaper import Article
+from Producer import ProducerClass
 
 class newsScraper:
     def send_article(self,url,count,producer,categoryName):
@@ -15,32 +16,16 @@ class newsScraper:
             article = Article(url)
             article.download()
             article.parse()
-            # print(article.authors)
-            # print("Article Publication Date:")
-            # print(article.publish_date)
-            # print("Major Image in the article:")
-            # print(article.top_image)
-            # article.nlp()
-            # print("Keywords in the article")
-            # print(article.keywords)
-            #
-            # print("Article Text:")
-            # print(article.text)
 
-            # writting news into list
             news_attribute_list = [article.title, article.top_image, article.text, categoryName,url]
 
             print("\n\n")
             print(count, ": ",categoryName,' : ',news_attribute_list[0],url, self.newsWebsiteName)
+            partNo = producer.select_partiton(categoryName)
+            producer.send_to_producer(self.newsWebsiteName,news_attribute_list,partNo)
+            print(partNo)
 
-            # print(self.newsWebsiteName,self.categoryName,self.websiteUrl)
-
-            # now sending to kafka
-            # KafkaProducer(value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-            # # print(news_attribute_list)
-            # producer.send('dawn' + str(count), news_attribute_list)
             count = count + 1
-            # producer.send('test', ["cat", "dog", "fish"])
 
         except ValueError as e:
             print('\n')
@@ -65,20 +50,7 @@ class newsScraper:
 
 
         #declare your producer here
-        producer = None
-        # # producer of kafka
-        # try:
-        #     # KafkaProducer(value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-        #
-        #     producer = KafkaProducer(bootstrap_servers=['localhost:9092'], api_version=(0, 10),
-        #                              value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-        #     print("Kafka producer created successfully..")
-        # except Exception as e:
-        #     print("Kafka Connecting Exception", e)
-        #     print("exiting...")
-        #     exit()
-
-
+        producer = ProducerClass.ProducerClass(['localhost:9093', 'localhost:9094', 'localhost:9095'])
 
 
         previous_url_list = []
@@ -169,16 +141,6 @@ class newsScraper:
                     count=count+1
 
                 previous_url_list = recved_url_list
-
-
-
-
-
-
-
-
-
-
 
             # if new url available, send it to kafka
             if new_url.__len__() > 0 and previous_url_list.__len__()>0:
