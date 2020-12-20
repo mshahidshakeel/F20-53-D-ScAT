@@ -7,10 +7,7 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule} from '@angular/fire/database';
 import { environment } from '../environments/environment';
-import { CreateNewsComponent } from './components/create-news/create-news.component';
-
 import { FormsModule } from '@angular/forms';
-import { ViewAllNewsComponent } from './components/view-all-news/view-all-news.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,9 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CreateNewsComponent,
-    ViewAllNewsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
