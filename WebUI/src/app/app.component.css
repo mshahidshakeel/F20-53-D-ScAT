@@ -1,0 +1,15 @@
+body {
+    background-image: url("../assets/background.jpg");
+}
+
+mat-toolbar {
+    position: absolute;
+    background-color: transparent;
+}
+
+.main-div {
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: available;
+}

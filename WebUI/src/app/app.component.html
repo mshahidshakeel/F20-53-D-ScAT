@@ -1,8 +1,12 @@
-<!-- <app-create-news></app-create-news>
-<br><br>
-<app-view-all-news></app-view-all-news> -->
+<body>
+    <mat-toolbar>
+        <button mat-button routerLink="">Home</button>
+        <button mat-button routerLink="aggregation">Aggregation</button>
+        <button mat-button routerLink="about">About</button>
+        <button mat-button routerLink="contact">Contact</button>
+    </mat-toolbar>
 
-
-<!-- <app-view-all-news></app-view-all-news> -->
-
-<h1>Hello, World</h1>
+    <div class="main-div">
+        <router-outlet></router-outlet>
+    </div>
+</body>

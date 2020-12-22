@@ -19,20 +19,34 @@ import { MatMenuModule } from '@angular/material/menu';
 // Might want to remove the menu dependancy
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RouterModule, Routes} from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { AggregationComponent } from './components/aggregation/aggregation.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
-
+const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'aggregation', component: AggregationComponent},
+  {path: '**', component: PageNotFoundComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AggregationComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+      RouterModule.forRoot(
+          appRoutes,
+          {enableTracing: true}
+      ),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
