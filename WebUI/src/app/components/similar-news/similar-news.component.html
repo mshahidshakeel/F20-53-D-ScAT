@@ -1,0 +1,36 @@
+<body>
+
+<mat-paginator
+        class="margin"
+        [length]="100"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+<mat-grid-list
+        cols="4"
+        rowHeight="200px"
+>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-news-card></app-news-card>
+    </mat-grid-tile>
+</mat-grid-list>
+</body>

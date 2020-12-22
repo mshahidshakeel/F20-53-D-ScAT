@@ -1,12 +1,27 @@
 <body>
-    <mat-toolbar>
-        <button mat-button routerLink="">Home</button>
-        <button mat-button routerLink="aggregation">Aggregation</button>
-        <button mat-button routerLink="about">About</button>
-        <button mat-button routerLink="contact">Contact</button>
-    </mat-toolbar>
+<mat-toolbar style="background-color: cornflowerblue; color: white;">
+    <!--        <button mat-button routerLink=""><mat-icon>home</mat-icon><span>Home</span></button>-->
+    <!--        <button mat-button routerLink="aggregation">Aggregation</button>-->
+    <!--        <button mat-button routerLink="about">About</button>-->
+    <!--        <button mat-button routerLink="contact">Contact</button>-->
+    <h1 class="title">ScAT FYP-1</h1>
+    <button mat-button>All News</button>
+    <button mat-button>Dawn</button>
+    <button mat-button>Daily Times</button>
+    <button mat-button>Tribune</button>
 
-    <div class="main-div">
-        <router-outlet></router-outlet>
-    </div>
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>help</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
 </body>
+
+<h1>Hello, World</h1>

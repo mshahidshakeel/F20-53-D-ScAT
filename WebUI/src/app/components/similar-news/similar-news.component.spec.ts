@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AggregationComponent } from './aggregation.component';
+import { SimilarNewsComponent } from './similar-news.component';
 
-describe('AggregationComponent', () => {
-  let component: AggregationComponent;
-  let fixture: ComponentFixture<AggregationComponent>;
+describe('SimilarNewsComponent', () => {
+  let component: SimilarNewsComponent;
+  let fixture: ComponentFixture<SimilarNewsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AggregationComponent ]
+      declarations: [ SimilarNewsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AggregationComponent);
+    fixture = TestBed.createComponent(SimilarNewsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
