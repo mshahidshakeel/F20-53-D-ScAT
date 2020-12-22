@@ -26,6 +26,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { NewsArticleComponent } from './components/news-article/news-article.component';
 
 // const appRoutes: Routes = [
 //     // {path: '', redirectTo: 'home'},
@@ -38,7 +39,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     declarations: [
         AppComponent,
         NewsCardComponent,
-        routingComponents
+        routingComponents,
+        NewsArticleComponent
     ],
     imports: [
         BrowserModule,

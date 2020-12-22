@@ -5,10 +5,10 @@
     <!--        <button mat-button routerLink="about">About</button>-->
     <!--        <button mat-button routerLink="contact">Contact</button>-->
     <h1 class="title">ScAT FYP-1</h1>
-    <button mat-button>All News</button>
-    <button mat-button>Dawn</button>
-    <button mat-button>Daily Times</button>
-    <button mat-button>Tribune</button>
+    <button mat-button [routerLink]="['/news', 'all']">All News</button>
+    <button mat-button [routerLink]="['/news', 'dawn']">Dawn</button>
+    <button mat-button [routerLink]="['/news', 'daily-times']">Daily Times</button>
+<!--    <button mat-button>Tribune</button>-->
 
     <span class="spacer"></span>
     <button mat-icon-button aria-label="Example icon-button with share icon">
@@ -23,5 +23,3 @@
     <router-outlet></router-outlet>
 </div>
 </body>
-
-<h1>Hello, World</h1>

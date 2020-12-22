@@ -16,8 +16,13 @@
     margin-right: 10px;
 }
 
+.card-image {
+    height: 140px;
+    object-fit: cover;
+}
+
 .card {
-    height: 160px;
+    height: 300px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;

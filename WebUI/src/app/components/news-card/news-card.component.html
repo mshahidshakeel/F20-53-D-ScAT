@@ -1,22 +1,23 @@
 <mat-card
         class="card"
-        (click)="cardClicked()"
+        (click)="cardClicked(title, imageUrl, source)"
         routerLink="card"
         (mouseover)="isActive = true"
         (mouseout)="isActive = false"
         [class.mat-elevation-z1]="!isActive" [class.mat-elevation-z10]="isActive">
+    <img class="card-image" matCardImage src="{{imageUrl}}">
     <mat-card-header class="card-header">
         <mat-card-title class="card-title">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deserunt, dolorem dolorum ducimus eos, facere fugit labore minima officia reprehenderit rerum sunt tempora voluptatum! Blanditiis deleniti dolore, eos illum, molestiae, nam neque odio omnis quae qui quia quis quos repudiandae rerum sequi sint ullam voluptates. Eius est quis quo voluptas.
+            {{title}}
         </mat-card-title>
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-footer class="card-footer">
         <mat-chip-list>
             <mat-chip
-                    matBadge="4"
+                    matBadge="{{count}}"
                     matBadgeSize="small"
-                    matTooltip="4 news are compared">Source</mat-chip>
+                    matTooltip="{{count}} news are compared">{{source}}</mat-chip>
         </mat-chip-list>
     </mat-card-footer>
 </mat-card>

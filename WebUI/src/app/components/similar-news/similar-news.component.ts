@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-similar-news',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./similar-news.component.css']
 })
 export class SimilarNewsComponent implements OnInit {
-
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
+  type: string;
 
   ngOnInit(): void {
+    this.activatedRoute.paramMap.subscribe(params => {
+      this.type = params.get('type');
+    });
   }
 
 }
