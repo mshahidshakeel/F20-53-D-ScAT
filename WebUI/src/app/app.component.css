@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+body {
+    /*background-image: url("../assets/background-dark.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: auto;*/
+    /*color: white;*/
+    /*background-color: whitesmoke;*/
+}
+
+.title {
+    font-family: Chalkboard,serif;
+    font-style: oblique;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+/*mat-toolbar {*/
+/*    position: absolute;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*.main-div {*/
+/*    padding-top: 5em;*/
+/*    margin: auto;*/
+/*    width: 50%;*/
+/*}*/

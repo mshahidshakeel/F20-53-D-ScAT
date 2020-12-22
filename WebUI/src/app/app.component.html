@@ -1,6 +1,25 @@
-<!-- <app-create-news></app-create-news>
-<br><br>
-<app-view-all-news></app-view-all-news> -->
+<body>
+<mat-toolbar style="background-color: cornflowerblue; color: white;">
+    <!--        <button mat-button routerLink=""><mat-icon>home</mat-icon><span>Home</span></button>-->
+    <!--        <button mat-button routerLink="aggregation">Aggregation</button>-->
+    <!--        <button mat-button routerLink="about">About</button>-->
+    <!--        <button mat-button routerLink="contact">Contact</button>-->
+    <h1 class="title">ScAT FYP-1</h1>
+    <button mat-button [routerLink]="['/news', 'all']">All News</button>
+    <button mat-button [routerLink]="['/news', 'dawn']">Dawn</button>
+    <button mat-button [routerLink]="['/news', 'daily-times']">Daily Times</button>
+<!--    <button mat-button>Tribune</button>-->
 
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>help</mat-icon>
+    </button>
+</mat-toolbar>
 
-<app-view-all-news></app-view-all-news>
+<div>
+    <router-outlet></router-outlet>
+</div>
+</body>
