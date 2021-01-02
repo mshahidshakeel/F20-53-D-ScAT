@@ -28,13 +28,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { NewsArticleComponent } from './components/news-article/news-article.component';
 
-// const appRoutes: Routes = [
-//     // {path: '', redirectTo: 'home'},
-//     // {path: '', component: HomeComponent},
-//     // {path: 'similarity', component: SimilarityCheckComponent},
-//     // {path: '**', component: PageNotFoundComponent}
-// ];
-
 @NgModule({
     declarations: [
         AppComponent,
