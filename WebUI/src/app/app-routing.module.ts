@@ -4,9 +4,9 @@ import {SimilarNewsComponent} from './components/similar-news/similar-news.compo
 import {NewsArticleComponent} from './components/news-article/news-article.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'news/all', pathMatch: 'full'},
-    {path: 'news/:type', component: SimilarNewsComponent},
-    {path: 'news-article', component: NewsArticleComponent}
+    {path: '', redirectTo: 'News/All', pathMatch: 'full'},
+    {path: 'News/:type', component: SimilarNewsComponent},
+    {path: 'NewsArticle/:title', component: NewsArticleComponent}
 ];
 
 @NgModule({

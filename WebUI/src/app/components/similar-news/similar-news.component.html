@@ -1,55 +1,10 @@
 <body>
-    <mat-grid-list
-            cols="4"
-            rowHeight="350px">
-        <mat-grid-tile>
-            <app-news-card
-                    title="PM takes notice of officers' inaction on complaints lodged on Pakistan Citizen Portal app"
-                    imageUrl="https://i.dawn.com/large/2019/11/5dc8d459f19ab.jpg"
-                    source="Dawn News">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="Fire breaks out at Cybernet-StormFiber Karachi head office, no casualties reported"
-                    imageUrl="https://i.dawn.com/large/2019/12/5de3b09d3a5de.jpg"
-                    source="Dawn News">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="Hike in oil prices, power tariff to dent plan to lower input cost"
-                    imageUrl="https://dailytimes.com.pk/assets/uploads/2017/11/14/FPCCI.jpg"
-                    source="Daily Times">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="Jupiter and Saturn meet in closest ëgreat conjunctioní since 1623"
-                    imageUrl="https://dailytimes.com.pk/assets/uploads/2020/12/21/3691.jpg"
-                    source="Daily Times">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="First-ever study launched to assess Blue Carbon assets in Pakistan"
-                    imageUrl="https://dailytimes.com.pk/assets/uploads/2020/02/18/Malik-Amin-Aslam-1.jpg"
-                    source="Daily Times">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="Concern among Muslims over halal status of Covid-19 vaccine"
-                    imageUrl="https://dailytimes.com.pk/assets/uploads/2020/12/21/Concern-among-Muslims-over-halal-status-of-Covid-19-vaccine.jpeg"
-                    source="Daily Times">
-            </app-news-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-            <app-news-card
-                    title="9-year-old Ryan Kaji is this year's highest-paid YouTuber"
-                    imageUrl="https://i.dawn.com/large/2020/12/5fdeffd1f10a9.jpg"
-                    source="Dawn News">
-            </app-news-card>
-        </mat-grid-tile>
-    </mat-grid-list>
+<mat-grid-list
+        cols="4"
+        rowHeight="350px">
+    <mat-grid-tile *ngFor="let article of getNewsArticles()">
+        <app-news-card [article]="article">
+        </app-news-card>
+    </mat-grid-tile>
+</mat-grid-list>
 </body>
