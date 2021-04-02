@@ -1,0 +1,19 @@
+<mat-toolbar style="background-color: cornflowerblue; color: white;">
+    <h1 class="title">ScAT FYP-1</h1>
+    <button mat-button [routerLink]="['/Dashboard']">Dashboard</button>
+    <button mat-button [routerLink]="['/News', 'All']">All News</button>
+    <button mat-button [routerLink]="['/News', 'Dawn']">Dawn</button>
+    <button mat-button [routerLink]="['/News', 'DailyTimes']">Daily Times</button>
+
+    <span class="spacer"></span>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+    <button mat-icon-button aria-label="Example icon-button with share icon">
+        <mat-icon>help</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,10 @@
+/* @import 'node_modules/bootstrap/dist/css/bootstrap-grid.css'; */
+@import '../../../../../node_modules/bootstrap/dist/css/bootstrap-grid.css';
+
+.card {
+    cursor: pointer;
+}
+
+mat-card-content h1 {
+    margin: 0 16px;
+}

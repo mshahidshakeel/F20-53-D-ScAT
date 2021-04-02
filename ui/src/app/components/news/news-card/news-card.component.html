@@ -1,0 +1,22 @@
+<mat-card
+        class="card"
+        [routerLink]="['/NewsArticle', article.getTitle()]"
+        (mouseover)="isActive = true"
+        (mouseout)="isActive = false"
+        [class.mat-elevation-z1]="!isActive" [class.mat-elevation-z10]="isActive">
+    <img class="card-image" matCardImage src="{{article.getImageUrl()}}" alt="Article Image">
+    <mat-card-header class="card-header">
+        <mat-card-title class="card-title">
+            {{article.getTitle()}}
+        </mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-footer class="card-footer">
+        <mat-chip-list>
+            <mat-chip
+                    matBadge="{{count}}"
+                    matBadgeSize="small"
+                    matTooltip="{{count}} news are compared">{{article.getSource()}}</mat-chip>
+        </mat-chip-list>
+    </mat-card-footer>
+</mat-card>

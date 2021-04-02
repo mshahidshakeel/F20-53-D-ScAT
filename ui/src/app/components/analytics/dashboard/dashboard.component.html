@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container">
+    <div class="row analytics">
+        <div class="col-12">
+            <h1 id="analytics">Analytics</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-4">
+            <app-numbers
+                    [title]='"All Channels"'
+                    [number]="1575">
+            </app-numbers>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <app-numbers
+                    [title]="'Dawn'"
+                    [number]="1000">
+            </app-numbers>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <app-numbers
+                    [title]="'DailyTimes'"
+                    [number]="575">
+            </app-numbers>
+        </div>
+    </div>
+
+    <div class="row theRow2">
+        <div class="col-sm-12 col-lg-8">
+            <app-graph></app-graph>
+        </div>
+
+        <div class="col-sm-12 col-lg-4">
+            <app-mini-graph></app-mini-graph>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</div>
+</body>
+</html>

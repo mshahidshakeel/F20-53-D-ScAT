@@ -1,0 +1,20 @@
+<!-- <mat-card
+        class="card"
+        (mouseover)="isActive = true"
+        (mouseout)="isActive = false"
+        [class.mat-elevation-z1]="!isActive" [class.mat-elevation-z10]="isActive">
+    <mat-card-header>
+        <mat-card-title>Graph is Working</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <h1 class="mat-display-3">{{number}}</h1>
+           </mat-card-content>
+</mat-card> -->
+<mat-card
+        (mouseover)="isActive = true"
+        (mouseout)="isActive = false"
+        [class.mat-elevation-z1]="!isActive" [class.mat-elevation-z10]="isActive">
+<div id="divGraph">
+    <canvas id="canvaGraph"></canvas>
+</div>
+</mat-card>
