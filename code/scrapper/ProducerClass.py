@@ -25,8 +25,9 @@ class ProducerClass:
         self.producer.send(topicName, value=value, partition=parNo)
 
 
-'''
+# connection test code
+#'''
 if __name__ == '__main__':
-    obj = ProducerClass(['localhost:9095', 'localhost:9093', 'localhost:9094'])
+    obj = ProducerClass(['localhost:9092'])
     obj.send_to_producer('TestTopic', ['Hello this is fake message'], b'currentaffairs')
-'''
+#'''

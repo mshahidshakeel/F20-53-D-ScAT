@@ -3,7 +3,7 @@ from time import sleep
 from bs4 import BeautifulSoup
 # from kafka import KafkaProducer
 from newspaper import Article
-from Producer import ProducerClass
+import ProducerClass
 
 class newsScraper:
     def send_article(self,url,count,producer,categoryName):
@@ -50,7 +50,7 @@ class newsScraper:
 
 
         #declare your producer here
-        producer = ProducerClass.ProducerClass(['localhost:9093', 'localhost:9094', 'localhost:9095'])
+        producer = ProducerClass.ProducerClass(['localhost:9092'])
 
 
         previous_url_list = []

@@ -1,6 +1,6 @@
 import threading
 from time import sleep
-from Scrapper.Scraper import newsScraper
+from Scraper import newsScraper
 
 
 class Dawn(newsScraper):
