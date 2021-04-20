@@ -31,6 +31,10 @@ import { DashboardComponent } from './components/analytics/dashboard/dashboard.c
 import { NumbersComponent } from './components/analytics/numbers/numbers.component';
 import { GraphComponent } from './components/analytics/graph/graph.component';
 import { MiniGraphComponent } from './components/analytics/mini-graph/mini-graph.component';
+import { HomeComponent } from './blog/home/home.component';
+import { CategoryBlockComponent } from './components/blocks/category-block/category-block.component';
+import { HomeHeaderComponent } from './components/blocks/home-header/home-header.component';
+import { HomeContentComponent } from './components/blocks/home-content/home-content.component';
 
 @NgModule({
     declarations: [
@@ -41,7 +45,11 @@ import { MiniGraphComponent } from './components/analytics/mini-graph/mini-graph
         DashboardComponent,
         NumbersComponent,
         GraphComponent,
-        MiniGraphComponent
+        MiniGraphComponent,
+        HomeComponent,
+        CategoryBlockComponent,
+        HomeHeaderComponent,
+        HomeContentComponent
     ],
     imports: [
         BrowserModule,

@@ -1,30 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-
-
-body {
-    /*background-image: url("../assets/background-dark.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: auto;*/
-    /*color: white;*/
-    /*background-color: whitesmoke;*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
-.title {
-    font-family: Chalkboard,serif;
-    font-style: oblique;
-}
 
-.spacer {
-    flex: 1 1 auto;
-}
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');*/
+/*.header {*/
+/*    font-family: Langar, serif;*/
+/*}*/
+
+/*.sidenav-container {*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*}*/
+
+/*.sidenav-content {*/
+/*    display: flex;*/
+/*    height: 100%;*/
+/*    flex-direction: column;*/
+/*    !*align-items: center;*!*/
+/*    !*justify-content: center;*!*/
+/*}*/
+
+/*.sidenav-header {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    background-color: white;*/
+/*    !*border: 2px solid rebeccapurple;*!*/
+/*    border-radius: 4px;*/
+/*    !*justify-content: center;*!*/
+/*}*/
+
+/*.sidenav-header h1 {*/
+/*    margin: 0;*/
+/*    flex: 1;*/
+/*    !*justify-content: center;*!*/
+/*    !*align-self: center;*!*/
+/*}*/
+
+/*.sidenav {*/
+/*    padding: 20px;*/
+/*    background-color: aliceblue;*/
+
+/*}*/
+
+/*body {*/
+/*    !*background-image: url("../assets/background-dark.jpg");*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    !*background-size: auto;*!*/
+/*    !*color: white;*!*/
+/*    !*background-color: whitesmoke;*!*/
+/*}*/
+
+/*.title {*/
+/*    font-family: Chalkboard,serif;*/
+/*    font-style: oblique;*/
+/*}*/
+
+/*.spacer {*/
+/*    flex: 1 1 auto;*/
+/*}*/
 
 /*mat-toolbar {*/
 /*    position: absolute;*/
 /*    background-color: transparent;*/
 /*}*/
 
-/*.main-div {*/
-/*    padding-top: 5em;*/
-/*    margin: auto;*/
-/*    width: 50%;*/
-/*}*/
+/*!*.main-div {*!*/
+/*!*    padding-top: 5em;*!*/
+/*!*    margin: auto;*!*/
+/*!*    width: 50%;*!*/
+/*!*}*!*/

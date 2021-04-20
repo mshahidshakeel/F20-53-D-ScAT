@@ -1,20 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/*!* You can add global styles to this file, and also import other style files *!*/
+/*@import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
 
-body {
-    background: whitesmoke;
-}
+/*body {*/
+/*    background: whitesmoke;*/
+/*}*/
 
-html, body {
-    height: 100%;
-}
+/*html, body {*/
+/*    height: 100%;*/
+/*}*/
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
 }
 
-*:focus {
-    outline: none !important;
-    border: 0 !important;
-}
+/**:focus {*/
+/*    outline: none !important;*/
+/*    border: 0 !important;*/
+/*}*/
+
+/*body {*/
+/*    width: 94%;*/
+/*    margin: 3%;*/
+/*    background-color: white;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: center;*/
+/*    align-items: stretch;*/
+/*}*/
+
+/*html {*/
+/*    background-color: aliceblue;*/
+/*}*/
+
+/*app-root {*/
+/*    flex: 1;*/
+/*}*/

@@ -1,0 +1,9 @@
+.home-content {
+    margin: 20px;
+    /*transform: translate(0, -50px);*/
+}
+
+.home {
+    background: url("src/assets/bg-light.jpeg") no-repeat;
+    background-size: 100vw 60vh;
+}

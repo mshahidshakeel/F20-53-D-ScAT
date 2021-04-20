@@ -1,10 +1,40 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+declare const $: any;
+declare interface RouteInfo {
+  path: string;
+  title: string;
+  icon: string;
+  class: string;
+}
+export const ROUTES: RouteInfo[] = [
+  { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
+  { path: '/user-profile', title: 'User Profile',  icon: 'person', class: '' },
+  { path: '/table-list', title: 'Table List',  icon: 'content_paste', class: '' },
+  { path: '/typography', title: 'Typography',  icon: 'library_books', class: '' },
+  { path: '/icons', title: 'Icons',  icon: 'bubble_chart', class: '' },
+  { path: '/maps', title: 'Maps',  icon: 'location_on', class: '' },
+  { path: '/notifications', title: 'Notifications',  icon: 'notifications', class: '' },
+  { path: '/upgrade', title: 'Upgrade to PRO',  icon: 'unarchive', class: 'active-pro' },
+];
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'S c A T';
+export class AppComponent implements OnInit {
+  menuItems: any[];
+
+  constructor() { }
+
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+    this.menuItems = ROUTES.filter(menuItem => menuItem);
+  }
+
+  // tslint:disable-next-line:typedef
+  isMobileMenu() {
+    return $(window).width() <= 991;
+  }
 }

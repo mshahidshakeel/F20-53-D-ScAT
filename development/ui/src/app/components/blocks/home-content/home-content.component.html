@@ -1,0 +1,13 @@
+<mat-grid-list
+        cols="4"
+        aria-placeholder="350px"
+>
+    <mat-grid-tile
+            *ngFor="let article of data"
+    >
+        <app-news-card
+                [article]="article"
+        >
+        </app-news-card>
+    </mat-grid-tile>
+</mat-grid-list>
