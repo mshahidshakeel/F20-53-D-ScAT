@@ -1,4 +1,11 @@
 <div class="home">
-    <app-home-header></app-home-header>
-    <app-home-content class="home-content"></app-home-content>
+    <app-home-header [type]="type"></app-home-header>
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Unique News">
+            <app-home-content class="home-content"></app-home-content>
+        </mat-tab>
+        <mat-tab label="Aggregated News">
+            <app-aggr-content></app-aggr-content>
+        </mat-tab>
+    </mat-tab-group>
 </div>

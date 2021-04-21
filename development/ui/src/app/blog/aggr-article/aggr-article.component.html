@@ -1,0 +1,17 @@
+<div class="main">
+    <app-home-header [type]="'unique news'"></app-home-header>
+
+
+    <img class="article-image" src="{{news.image}}" alt="">
+
+    <h1>{{news.title}}</h1>
+
+    <div class="article-content">
+        <p align="justify">{{news.body}}</p>
+        <br>
+
+        <div class="wrapper-a">
+            <a href="{{news.url}}">Original Article Link</a><br>
+        </div>
+    </div>
+</div>

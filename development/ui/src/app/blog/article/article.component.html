@@ -1,0 +1,41 @@
+<div class="main">
+    <app-home-header [type]="'unique news'"></app-home-header>
+
+
+    <img class="article-image" src="{{news.image}}" alt="">
+
+
+    <!--    <div class="article-images">-->
+    <!--        <mat-grid-list-->
+    <!--                cols="{{news.length}}">-->
+
+    <!--            <mat-grid-tile colspan="{{1}}" *ngFor="let link of links">-->
+    <!--                <img src="{{link.image}}" alt="...">-->
+    <!--            </mat-grid-tile>-->
+    <!--        </mat-grid-list>-->
+    <!--    </div>-->
+
+    <h1>{{news.title}}</h1>
+
+    <div class="article-content">
+        <p align="justify">{{news.body}}</p>
+        <br>
+
+        <div class="wrapper-a">
+            <a href="{{news.url}}">Original Article Link</a><br>
+        </div>
+        <!--        <mat-grid-list-->
+        <!--                cols="{{cols}}"-->
+        <!--                rowHeight="50px"-->
+        <!--                (window:resize)="onResize($event)"-->
+        <!--        >-->
+
+        <!--            <mat-grid-tile-->
+        <!--                    class="ref-originals"-->
+        <!--                    *ngFor="let link of links"-->
+        <!--            >-->
+        <!--                <a href="{{link.url}}">{{link.url.substr(8, link.url.length - 8).split('/')[0]}}</a><br>-->
+        <!--            </mat-grid-tile>-->
+        <!--        </mat-grid-list>-->
+    </div>
+</div>

@@ -1,0 +1,102 @@
+.card-title {
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.card-image {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    height: 250px;
+    max-width: 300px;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /*padding-top: 20px;*/
+}
+
+@media (max-width: 356px) {
+    .card {
+        height: 250px;
+        min-width: 250px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+mat-chip-list {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap');*/
+
+/*.card-title {*/
+/*    text-overflow: ellipsis;*/
+/*    overflow: hidden;*/
+/*    font-size: 0.75rem;*/
+/*    line-height: 1rem;*/
+/*    margin-bottom: 0;*/
+/*    padding: 10px;*/
+/*    font-family: "Martel Sans", serif;*/
+/*}*/
+
+/*.card-title-wrapper {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.card-image {*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    object-fit: cover;*/
+/*}*/
+
+/*.card {*/
+/*    margin: 10px;*/
+/*    max-width: 300px;*/
+/*    min-width: 300px;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    background-color: white;*/
+/*    height: 100px;*/
+/*    overflow: hidden;*/
+/*    text-overflow-ellipsis: true;*/
+/*    !*padding-top: 20px;*!*/
+/*}*/
+
+/*.card:hover {*/
+/*    transform: scale(1.02);*/
+/*}*/

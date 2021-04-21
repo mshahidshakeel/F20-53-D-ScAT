@@ -1,0 +1,39 @@
+.card-title {
+    height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card-image {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    height: 100px;
+    max-width: 300px;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    /*padding-top: 20px;*/
+}
+
+@media (max-width: 356px) {
+    .card {
+        height: 100px;
+        min-width: 250px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+mat-chip-list {
+    pointer-events: none;
+}
+

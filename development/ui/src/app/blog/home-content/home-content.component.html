@@ -1,0 +1,16 @@
+<div class="grid-wrapper">
+    <mat-grid-list
+            [cols]="breakpoint" rowHeight="320px" (window:resize)="onResize($event)"
+    >
+        <mat-grid-tile
+                *ngFor="let news of uniqueNews"
+        >
+            <app-news-card
+                    [id]="news.id"
+                    [image]="news.image"
+                    [title]="news.title"
+            >
+            </app-news-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

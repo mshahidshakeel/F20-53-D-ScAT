@@ -1,0 +1,12 @@
+<mat-card
+        class="card"
+        [routerLink]="['/cluster', id]"
+        (mouseover)="isActive = true"
+        (mouseout)="isActive = false"
+        [class.mat-elevation-z1]="!isActive" [class.mat-elevation-z10]="isActive">
+    <mat-card-header class="card-header card-title-wrapper">
+        <mat-card-title class="card-title">
+            {{title}}
+        </mat-card-title>
+    </mat-card-header>
+</mat-card>

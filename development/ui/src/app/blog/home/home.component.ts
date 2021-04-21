@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {DummyDataService} from '../../services/dummy-data.service';
 import {BlogService} from '../../services/blog.service';
 import {TestData} from '../../models/test-data.model';
-import {Observable} from 'rxjs';
+import {Summary} from '../../models/summary.model';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +10,8 @@ import {Observable} from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private type: string;
-  private testDataset: TestData[];
+  type: string;
+  // summaries: Summary[];
 
   /**
    * This constructor initializes an ActivatedRoute object
@@ -33,21 +32,38 @@ export class HomeComponent implements OnInit {
       this.type = params.get('type');
     });
 
-    console.log('init');
+
+
+    // console.log('init');
 
     // Data
-    // this.blogData.getTestData().subscribe(data => {
-    //   this.testDataset = data.map(e => {
+    // this.blogData.getRecords().subscribe(data => {
+    //   this.summaries = data.map(e => {
     //     return {
     //       id: e.payload.doc.id,
-    //       ...e.payload.doc.data()
-    //     } as TestData;
+    //       ...e.payload.doc.data() as {}
+    //     } as Summary;
     //   });
     // });
 
-    const items: Observable<any[]> = this.blogData.getTestData();
+    // console.log(this.summaries);
 
-    console.log(items);
+    // this.blogData.getTestSnapshotChanges().pipe(
+    //     map(changes =>
+    //       changes.map(c =>
+    //           ({id: c.payload.doc.id, ...c.payload.doc.data() as {}})
+    //       )
+    //     )
+    // ).subscribe(data => {
+    //   this.testDataset = data;
+    // });
+
+    // console.log(this.testDataset);
+
+
+    // const items: Observable<any[]> = this.blogData.getTestData();
+    //
+    // console.log(items);
 
     // @ts-ignore
     // for (const item of items) {

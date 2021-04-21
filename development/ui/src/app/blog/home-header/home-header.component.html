@@ -1,0 +1,17 @@
+<div class="home-header">
+
+    <img class="logo" src="assets/logo.png" alt=""/>
+
+    <div class="categories">
+        <app-category-block
+                class="category-block"
+                *ngFor="let category of categories"
+                [title]="category.title"
+                [icon]="category.icon"
+                [routerLink]="['/blog', category.title.toLowerCase()]"
+        >
+        </app-category-block>
+    </div>
+
+    <p class="mode" >{{!type ? 'home': type}}</p>
+</div>

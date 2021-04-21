@@ -1,0 +1,15 @@
+<div class="grid-wrapper">
+    <mat-grid-list
+            [cols]="breakpoint" rowHeight="160px" (window:resize)="onResize($event)"
+    >
+        <mat-grid-tile
+                *ngFor="let news of aggrNews"
+        >
+            <app-aggr-card
+                    [id]="news.id"
+                    [title]="news.title"
+            >
+            </app-aggr-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
