@@ -7,3 +7,10 @@
     background: url("src/assets/bg-light.jpeg") no-repeat;
     background-size: 100vw 60vh;
 }
+
+@media (max-width: 600px) {
+    .home {
+        background: url("src/assets/bg-light.jpeg") fixed;
+        background-size: 100vw 100vh;
+    }
+}

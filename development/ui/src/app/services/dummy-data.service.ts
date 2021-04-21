@@ -63,6 +63,13 @@ export class DummyDataService {
             'Dawn News',
             'Technology'
         );
+
+        this.data[7] = new Article(
+            '9-year-old Ryan Kaji is this year\'s highest-paid YouTuber 9-year-old Ryan Kaji is this year\'s highest-paid YouTuber 9-year-old Ryan Kaji is this year\'s highest-paid YouTuber',
+            'https://i.dawn.com/large/2020/12/5fdeffd1f10a9.jpg',
+            'Dawn News',
+            'Technology'
+        );
     }
 
     /**

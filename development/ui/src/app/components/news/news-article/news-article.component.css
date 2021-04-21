@@ -1,14 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&family=Open+Sans&display=swap');
+
+
+
 .main {
-    width: 50%;
-    margin: 20px auto auto;
-    background-color: white;
+    /*margin: 20px auto auto;*/
     overflow: hidden;
+    background: url("src/assets/bg-light.jpeg") no-repeat;
+    background-size: 100vw 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.article-img {
-    width: 100%;
+.main h1 {
+    background-color: rgba(255,255,255, 0.6);
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid white;
+    text-align: center;
+    font-weight: bold;
+    max-width: 90vw;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.article-images {
+    width: 90vw;
+    height: calc(50vw + 20px + 20px);
 }
 
 .article-content {
     margin: 20px;
+    max-width: 90vw;
+    font-size: 0.7em;
+    line-height: 1em;
+    font-family: "Open Sans", serif;
+}
+
+mat-grid-list {
+    height: 15vw;
+}
+
+
+@media (min-width: 320px) {
+    .article-images {
+        width: 60vw;
+        height: calc(30vw + 20px + 20px);
+    }
+
+    mat-grid-list {
+        height: 15vw;
+    }
+
+    .article-content {
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 600px) {
+    .main h1 {
+        text-align: center;
+        font-weight: bold;
+        max-width: 75vw;
+        font-size: 1.8em;
+        line-height: 1.2em;
+    }
+
+    .article-images {
+        width: 50vw;
+        height: calc(30vw + 20px + 20px);
+    }
+
+    mat-grid-list {
+        height: 15vw;
+    }
+
+    .article-content {
+        font-size: 1.2em;
+        max-width: 70vw;
+    }
 }

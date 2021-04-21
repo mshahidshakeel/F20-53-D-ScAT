@@ -1,13 +1,14 @@
-<mat-grid-list
-        cols="4"
-        aria-placeholder="350px"
->
-    <mat-grid-tile
-            *ngFor="let article of data"
+<div class="grid-wrapper">
+    <mat-grid-list
+            [cols]="breakpoint" rowHeight="120px" (window:resize)="onResize($event)"
     >
-        <app-news-card
-                [article]="article"
+        <mat-grid-tile
+                *ngFor="let article of data"
         >
-        </app-news-card>
-    </mat-grid-tile>
-</mat-grid-list>
+            <app-news-card
+                    [article]="article"
+            >
+            </app-news-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

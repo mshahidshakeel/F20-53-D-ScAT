@@ -1,11 +1,33 @@
-
 <div class="main">
     <app-home-header></app-home-header>
 
-    <img class="article-img" src="{{article.getImageUrl()}}" alt="Article Image">
+    <h1>{{article.getTitle()}}</h1>
+
+    <div class="article-images">
+        <mat-grid-list
+            cols="3">
+
+            <mat-grid-tile>
+                <img src="assets/background-dark.jpg" alt="...">
+            </mat-grid-tile>
+
+            <mat-grid-tile colspan="2">
+                <img src="assets/background-dark.jpg" alt="...">
+            </mat-grid-tile>
+
+            <mat-grid-tile colspan="2">
+                <img src="assets/background-dark.jpg" alt="...">
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <img src="assets/background-dark.jpg" alt="...">
+            </mat-grid-tile>
+
+        </mat-grid-list>
+    </div>
+
     <div class="article-content">
-        <h1>{{article.getTitle()}}</h1>
-        <p>{{body}}</p>
+        <p align="justify">{{body}}</p>
         <br>
         <a href="#">link1</a><br>
         <a href="#">link2</a><br>

@@ -11,6 +11,7 @@ import {DummyDataService} from '../../../services/dummy-data.service';
 export class HomeContentComponent implements OnInit {
   type: string;
   data: Article[];
+  breakpoint: number;
 
   /**
    * This constructor initializes an ActivatedRoute object
@@ -43,10 +44,17 @@ export class HomeContentComponent implements OnInit {
           this.data = this.dummyData.getAllNews();
       }
     });
+
+    this.breakpoint = (window.innerWidth <= 550) ? 1 : (window.innerWidth <= 950) ? 2 : 3;
   }
 
   getNewsArticles(): Article[] {
     return this.data;
   }
 
+  // tslint:disable-next-line:typedef
+  onResize(event) {
+    const width = event.target.innerWidth;
+    this.breakpoint = (width <= 550) ? 1 : (width <= 950) ? 2 : 3;
+  }
 }
